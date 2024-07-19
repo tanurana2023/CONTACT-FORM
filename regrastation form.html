@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>regrastation form</title>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .container {
+      height: 600px;
+      width: 100%;
+      background-color: #cf2e2e;
+      position: absolute;
+    }
+
+    .data_list {
+      width: 100%;
+      height: 50px;
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+    }
+
+    .data_list ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    .data_list ul li {
+      padding: 20px;
+      color: aliceblue;
+    }
+
+    .main {
+      height: 50vh;
+      width: 50vw;
+      background-color: rgba(255, 255, 255, 0.952);
+      margin-left: 30%;
+      margin-top: 5%;
+      margin-right: 50%;
+      margin-bottom: 30%;
+      box-sizing: border-box;
+      display: flex;
+      box-shadow: 2px 0px 3px 4px solid ghostwhite;
+      position: relative;
+    }
+
+    .main img {
+      height: 100%;
+      width: 40%;
+    }
+
+    input {
+      justify-content: flex-end;
+      width: 70%;
+      height: 40px;
+      margin-left: 20%;
+      margin-top: 5%;
+      border: none;
+      border-bottom: 2px solid gray;
+      font-size: 15px;
+     
+    }
+
+    h2 {
+      text-align: center;
+      padding-top: 10px;
+      font-size: 20px;
+
+    }
+
+    button {
+      margin-left: 20%;
+      background-color: rgb(12, 83, 19);
+      height: 10%;
+      width: 70px;
+      margin-top: 10px;
+      color: aliceblue;
+      /* box-shadow:   10px 5px red; */
+    }
+    @media only screen and (max-width:600px){
+      .container{
+        height: 1200px;
+        width:100%;
+        background-attachment: fixed;
+
+      }
+      .main{
+     flex-direction: column;
+        width: 100%;
+        background-color: none;
+        margin-left: 5%;
+      margin-top: 5%;
+      margin-right: 0%;
+      margin-bottom: 0%;
+     
+    
+
+      }
+      .main img{
+        width: 95%;
+        height:auto;
+        background-size: cover;
+        
+
+      }
+      input{
+        justify-content: initial;
+        width: 70%;
+        height: 40px;
+        margin-left: 5%;
+        border: none;
+      border-bottom: 2px solid black;
+      background-color:#cf2e2e;
+      font-size: 10px;
+     
+
+      
+      }
+      h2{
+        text-align: start;
+      }
+    button{
+      width: 50%;
+      margin-left: 5%;
+    }
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="data_list">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </header>
+    <div>
+      <div class="main">
+        <img src="profilesoniya.jpg"  />
+        <form>
+          <h2>REGRASTATION FORM</h2>
+          <label>
+            <input type="text" name=" frist name" placeholder=" Frist Name" />
+            <input type="text" name="last name" placeholder=" Last Name" />
+            <input type="grnder" name=" gender" placeholder="Gender" />
+            <input type="date" name=" date of birth" placeholder="Date Of Birth" />
+            <button type="submit">submit</button>
+          </label>
+        </form>
+      </div>
+    </div>
+
+
+</body>
+
+</html>
